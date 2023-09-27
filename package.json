@@ -12,5 +12,8 @@
   "devDependencies": {
     "lerna": "^7.3.0",
     "rollup-plugin-postcss": "^4.0.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Code-Closet"
   }
 }
