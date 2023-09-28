@@ -17,13 +17,20 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "button": "file:../button"
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "button": "file:../button",
+    "eslint": "^8.50.0",
+    "eslint-plugin-jest": "^27.4.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-testing-library": "^6.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint . --ext .tsx,.ts src/"
   },
   "eslintConfig": {
     "extends": [
