@@ -10,6 +10,7 @@
     "typescript": "^5.2.2"
   },
   "devDependencies": {
+    "husky": ">=6",
     "lerna": "^7.3.0",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
@@ -18,5 +19,12 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/Code-Closet"
+  },
+  "lint-staged": {
+    "*.{tsx,ts}": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write --ignore-unknown"
+  },
+  "scripts": {
+    "prepare": "husky install"
   }
 }

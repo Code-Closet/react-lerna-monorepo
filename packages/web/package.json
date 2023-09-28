@@ -31,7 +31,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "npx eslint . --ext .tsx,.ts src/",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -52,7 +53,7 @@
     ]
   },
   "lint-staged": {
-    "*.(tsx|tx)": "eslint --cache --fix",
-    "*": "prettier --write --ignore-unknown"
+    "*": "prettier --write --ignore-unknown",
+    "*.{tsx,ts}": "eslint --cache --fix"
   }
 }
