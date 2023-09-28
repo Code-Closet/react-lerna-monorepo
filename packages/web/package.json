@@ -28,7 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "tsc",
-    "test": "react-scripts test",
+    "test": "jest",
+    "test:ci": "jest --coverage --silent",
     "eject": "react-scripts eject",
     "lint": "npx eslint . --ext .tsx,.ts src/",
     "lint-staged": "lint-staged",
