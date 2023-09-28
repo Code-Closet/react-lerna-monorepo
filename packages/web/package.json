@@ -30,7 +30,8 @@
     "build": "tsc",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "npx eslint . --ext .tsx,.ts src/"
+    "lint": "npx eslint . --ext .tsx,.ts src/",
+    "lint-staged": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +50,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+    "*.(tsx|tx)": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unknown"
   }
 }
